@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Sports Website</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #1e90ff;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #1e90ff;
+        }
+
+        .container {
+            padding: 20px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: white;
+            width: 250px;
+            margin: 15px;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .card h3 {
+            color: #1e90ff;
+        }
+
+        .card button {
+            padding: 8px 15px;
+            border: none;
+            background-color: #1e90ff;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .card button:hover {
+            background-color: #0b5ed7;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>🏆 Sports World</h1>
+    <p>All About Your Favorite Sports</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Sports</a>
+    <a href="#">News</a>
+    <a href="#">Contact</a>
+</nav>
+
+<div class="container">
+
+    <div class="card">
+        <h3>🏏 Cricket</h3>
+        <p>Cricket is one of the most popular sports in the world.</p>
+        <button onclick="showSport('Cricket')">Learn More</button>
+    </div>
+
+    <div class="card">
+        <h3>⚽ Football</h3>
+        <p>Football is known as the beautiful game.</p>
+        <button onclick="showSport('Football')">Learn More</button>
+    </div>
+
+    <div class="card">
+        <h3>🏀 Basketball</h3>
+        <p>Basketball is a fast-paced indoor sport.</p>
+        <button onclick="showSport('Basketball')">Learn More</button>
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 Sports World | Simple HTML CSS JS Project</p>
+</footer>
+
+<script>
+    function showSport(sportName) {
+        alert("You clicked on " + sportName + "!");
+    }
+</script>
+
+</body>
+</html>
